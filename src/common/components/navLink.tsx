@@ -3,13 +3,16 @@ import React, { FC } from "react";
 
 interface NavLinkProps {
   title: string;
+  className?: string;
   href: string;
 }
 
-export const NavLink: FC<NavLinkProps> = ({ href, title }) => {
+export const NavLink: FC<NavLinkProps> = ({ href, title, className = "" }) => {
   return (
-    <li className="mx-3">
-      <Link className="text-lg" href={href}>{title}</Link>
+    <li className="mr-6">
+      <Link className={`text-lg ${className}`} href={href}>
+        {title}
+      </Link>
     </li>
   );
 };
