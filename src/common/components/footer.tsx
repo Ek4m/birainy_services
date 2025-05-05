@@ -10,7 +10,7 @@ export const MainAppFooter = () => {
     <div className="py-[2rem] px-[4rem] bg-black">
       <div className="flex w-full items-end justify-between mb-10">
         <div>
-          <h1 className="text-white text-[3rem] w-[300px] mb-6 leading-[3rem]">
+          <h1 className="text-white text-[3rem] w-[400px] mb-6 leading-[3rem]">
             Bizimlə indi əlaqəyə keçin
           </h1>
           <ul className="flex">
