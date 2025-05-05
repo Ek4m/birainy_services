@@ -35,19 +35,23 @@ export const ServicesList = () => {
     >
       <div className="grid grid-cols-5 mt-5 gap-5">
         <div className="col-span-2">
-          {dummyServices.map((service) => (
-            <Accordion key={service[0].id} items={service} />
+          {dummyServices.map((service, index) => (
+            <Accordion
+              defaultOpen={index === 0}
+              key={service[0].id}
+              items={service}
+            />
           ))}
         </div>
         <div className="col-span-3">
           <h1 className="text-[4rem]">{activeService?.title}</h1>
           <p>{activeService?.description}</p>
-          <div className="flex w-[80%]  my-8">
-            <button className="px-6 rounded-md py-2 bg-[#f7d000] flex items-center justify-around w-[45%] mr-3 px-[2.5rem]">
+          <div className="flex w-[75%]  my-8">
+            <button className="cursor-pointer px-6 rounded-md py-2 bg-[#f7d000] flex items-center justify-around w-[45%] mr-3 px-[2rem]">
               <FaPhoneAlt size={20} />
               <p className="text-sm">Bizimlə əlaqə saxlayın</p>
             </button>
-            <button className="px-6 rounded-md py-2 bg-[lightgrey] flex items-center justify-around w-[45%] px-[2.5rem]">
+            <button className="cursor-pointer px-6 rounded-md py-2 bg-[lightgrey] flex items-center justify-around w-[45%] px-[2rem]">
               <HiOutlineCursorArrowRipple size={20} />
               <p className="text-sm">İşlərimizə nəzər yetirin</p>
             </button>

@@ -3,8 +3,11 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 import { IService } from "../types/interfaces";
 import { ServiceContext } from "./servicesList";
 
-export const Accordion: FC<{ items: IService[] }> = ({ items }) => {
-  const [open, setOpen] = useState(false);
+export const Accordion: FC<{ items: IService[]; defaultOpen?: boolean }> = ({
+  items,
+  defaultOpen = false,
+}) => {
+  const [open, setOpen] = useState(defaultOpen);
   const { onClick, active } = useContext(ServiceContext);
 
   const onOpen = useCallback(() => {
