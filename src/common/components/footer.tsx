@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const MainAppFooter = () => {
   return (
-    <div className="py-[2rem] px-[4rem] bg-black">
+    <div className="pt-[4rem] px-[4rem] bg-black">
       <div className="flex w-full items-end justify-between mb-10">
         <div>
           <h1 className="text-white text-[3rem] w-[400px] mb-6 leading-[3rem]">
@@ -58,7 +58,7 @@ export const MainAppFooter = () => {
           </h2>
         </div>
       </div>
-      <div className="border-t-2 border-white mt-10 pt-8 flex w-full justify-between items-center">
+      <div className="border-t-2 border-white mt-10 py-8 flex w-full justify-between items-center">
         <div className="flex items-center">
           <Checked />
           <p className="text-white mx-3">Partner with</p>

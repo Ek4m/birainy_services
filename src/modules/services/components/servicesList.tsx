@@ -33,7 +33,7 @@ export const ServicesList = () => {
         services: dummyServices,
       }}
     >
-      <div className="grid grid-cols-5 mt-5 gap-5">
+      <div className="grid grid-cols-5 mt-5 gap-[3rem]">
         <div className="col-span-2">
           {dummyServices.map((service, index) => (
             <Accordion
